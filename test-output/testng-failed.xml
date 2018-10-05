@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Test-class Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Free CRM App Test Cases2(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="loginK2"/>
+          <include name="setUp"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="verifyContactsPageLabel"/>
+          <include name="validateCreateNewContact"/>
+          <include name="loginK1"/>
+          <include name="selectSingleContactsTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- Free CRM App Test Cases2(failed) -->
+</suite> <!-- Failed suite [Test-class Suite] -->

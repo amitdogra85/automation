@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" parallel="tests" thread-count="4" >
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="Free CRM App Test Cases1">
+	    <classes>
+			<class name="com.crm.qa.testcases.developTest"></class>
+			
+			
+		</classes>
+	</test>
+	<test name="Free CRM App Test Cases2">
+	    <classes>
+			
+			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
+			
+			
+		</classes>
+	</test>
+	<test name="Free CRM App Test Cases3">
+	    <classes>
+			
+			<class name="com.crm.qa.testcases.HomePageTest"></class>
+			
+			
+		</classes>
+	</test>
+</suite>
