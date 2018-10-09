@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Test-class Suite]" parallel="tests">
-  <listeners>
-    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
-  </listeners>
-  <test name="Free CRM App Test Cases2(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.ContactsPageTest">
+      <class name="com.crm.qa.testcases.Demo">
         <methods>
-          <include name="loginK2"/>
           <include name="setUp"/>
-          <include name="selectMultipleContactsTest"/>
-          <include name="verifyContactsPageLabel"/>
-          <include name="validateCreateNewContact"/>
-          <include name="loginK1"/>
-          <include name="selectSingleContactsTest"/>
+          <include name="addContentInSmartRoomLocalDrive"/>
+          <include name="loginK1091"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
+      </class> <!-- com.crm.qa.testcases.Demo -->
     </classes>
-  </test> <!-- Free CRM App Test Cases2(failed) -->
-</suite> <!-- Failed suite [Test-class Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
